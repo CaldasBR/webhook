@@ -8,17 +8,23 @@ header = {
 }
 
 data = {
-    "type":"text/plain"
-    ,"content":"aloooo"
-    ,"id":"bc86a5ad-b847-4872-bf46-64c0356b716c"
-    ,"from":"315644c5-3eba-4b5e-9516-6de9d4e333a6.bancopanrouterhmg@0mn.io/default"
-    ,"to":"bancopanrouterhmg@msging.net"
-    ,"metadata":{
-        "#uniqueId":"c2a7c016-e1a5-4122-8ddf-e9cf24def049"
-        ,"date_created":"1625559617643"
-        ,"uber-trace-id":"24cabc654458601e%3A24cabc654458601e%3A0%3A1"
-        ,"#envelope.storageDate":"2021-07-06T08:20:17Z"
-    }
+  "ownerIdentity": "bancopanrouterhmg@msging.net",
+  "identity": "315644c5-3eba-4b5e-9516-6de9d4e333a6.bancopanrouterhmg@0mn.io",
+  "contact": {
+    "Identity": "315644c5-3eba-4b5e-9516-6de9d4e333a6.bancopanrouterhmg@0mn.io"
+  },
+  "messageId": "cd60b7cb-d1e8-4585-90a7-b0e7e1b5e808",
+  "storageDate": "2021-07-06T08:20:03.663Z",
+  "category": "flow",
+  "action": "[F.1.2.0] Transferring to Desk - Process input",
+  "extras": {
+    "stateId": "d29e6a8c-f2b6-4f2a-b9fc-571ba01145b3",
+    "#stateName": "[F.1.2.0] Transferring to Desk - Process input",
+    "#stateId": "d29e6a8c-f2b6-4f2a-b9fc-571ba01145b3",
+    "#messageId": "cd60b7cb-d1e8-4585-90a7-b0e7e1b5e808",
+    "#previousStateId": "d7b96154-4dfa-4286-adfc-b7a7e4fca41f",
+    "#previousStateName": "[F.1.2.0] Show Confirmation to Transfer Menu"
+  }
 }
 
 r = requests.post(webhook_url, data=json.dumps(data),headers=header)
