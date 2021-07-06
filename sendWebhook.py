@@ -12,4 +12,4 @@ data = {
     ,'channel URL': 'Test URL'
 }
 
-r = requests.post(webhook_url, data=json.dumps(data),headers=json.dumps(header))
+r = requests.post(webhook_url, data=json.dumps(data),headers=header)
