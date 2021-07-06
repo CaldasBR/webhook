@@ -9,7 +9,7 @@ header = {
 
 data = {
     'name':'Filipe Caldas'
-    'channel URL': 'Test URL'
+    ,'channel URL': 'Test URL'
 }
 
 r = requests.post(webhook_url, data=json.dumps(data),headers=json.dumps(header))
