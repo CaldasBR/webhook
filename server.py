@@ -11,6 +11,6 @@ def webhook():
         abort(400)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='167.71.84.108')
 
 #foi15
